@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    
+}
+
+/* header */
+header{
+    height: 10%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+header i{
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* end header */
+
+/* blog box  */
+#blogSection{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+.blogBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+    box-shadow: 0 0 5px black;
+    border-radius: 3px;
+    height: 370px;
+    width: 250px;
+}
+.blogBox img{
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+    width: 220px;
+    height: 180px;
+}
+
+.blogBox button{
+    width: 220px;
+    padding: 3px;
+    border: none;
+    background-color: rgb(210, 192, 192);
+    color: rgb(182, 13, 13);
+    cursor: pointer;
+}
+
+
+/* end blog box */
+
+/* form div */
+#blogFormBox{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 0.774);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+#sumitForm{
+    background-color: blueviolet;
+    height: 65%;
+    width: 60%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 1.5%;
+    position: relative;
+}
+
+#sumitForm i{
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+input[type=text]{
+    height: 40px;
+}
